@@ -10,11 +10,11 @@ In der OOBE-Maske **Shift+F10** drücken → Eingabeaufforderung öffnet sich.
 
 Dann ausführen:
 
-\`\`\`cmd
+```cmd
 curl -L https://raw.githubusercontent.com/kellersepp/autounattend-Win11/main/scripts/skip.cmd -o C:\skip.cmd
 certutil -hashfile C:\skip.cmd SHA256
 C:\skip.cmd
-\`\`\`
+```
 
 Die SHA256-Prüfsumme wird angezeigt.  
 Vergleiche sie mit der Datei:
@@ -55,7 +55,7 @@ Ein Konto zum Arbeiten, eins für Admin-Aufgaben.
 ## 👍 Warum dieser Weg?
 
 - Sehr schnelle Lösung, wenn jemand im OOBE steckt und **kein lokales Konto anlegen kann**
-- Keine Registrierung, kein Tool-Download, keine Installation
+- Keine Registrierung, kein extra Tool-Download, keine Installation
 - theoretisch auch lokal ausführbar, wenn ihr euch die entsprechenden commands aus dem Skript kopiert.
 
 ---
